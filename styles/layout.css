@@ -1,0 +1,120 @@
+@import '../global.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #02577A;
+    font-size: 0.7rem;
+    padding: 1rem 0;
+  }
+.sidebar {
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    background: #F7F6FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+    overflow: hidden
+}
+.sidebar:hover {
+    width: 206px;
+}
+.logo , .line {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+#line {
+    border-bottom: 2px solid  #C4C4C4;
+    width: 70%;
+}
+#line2 {
+        width: 30%;
+        margin: 0.5rem auto;
+        border-bottom: 1px solid #02577a;
+}
+/* NAVIGATION NAV */
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+a {
+    display: flex;
+    text-decoration: none;
+}
+.list {
+    display: grid;
+    align-items: center;
+    column-gap: 50px;
+    width: 30px;
+    height: 4rem;
+    text-align: left;
+    border-radius: 25px 0px 0px 25px;
+    transition: 0.5s;
+}
+.list:hover , .list:active {
+    color: #02577a;
+    background-color: #ffffff;
+    border-radius: 25px 0px 0px 25px;
+    width: 206px;
+    height: 57px;
+}
+/* SVG */
+.svg {
+    margin-left: 25px;
+}
+.list:hover .svg , .list:active .svg {
+    filter: invert(22%) sepia(72%) saturate(1798%) hue-rotate(173deg) brightness(50%) contrast(98%);
+}
+.svg1 {
+    filter: invert(65%) sepia(90%) saturate(2%) hue-rotate(7deg) brightness(101%) contrast(95%);
+}
+.list:hover .svg1 {
+    filter: none;
+}
+#active .svg {
+    filter: none;
+}
+.active .svg {
+    filter: invert(22%) sepia(72%) saturate(1798%) hue-rotate(173deg) brightness(50%) contrast(98%);
+}
+/* TEXT */
+.text {
+    display: none;
+    color:  rgba(196, 196, 196, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+.list:hover .text , .list:active .text {
+    color: #02577a;
+}
+.sidebar:hover .text {
+    display: grid;
+}
+.home {
+    margin-left: 28px;
+}
+.calendar {
+    margin-left: 29px;
+}
+.fe {
+    margin-left: 29px;
+}
+.games {
+    margin-left: 15px;
+}
+.active .text , #active .text {
+    color: #02577a;
+}

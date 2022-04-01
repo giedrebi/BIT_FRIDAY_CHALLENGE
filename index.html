@@ -44,9 +44,33 @@
             </ul>
         </nav>
     </div>
+    <header>
+        <div class="name">
+            <h1 >Good morning, Giedre Bielske</h1>
+        </div>
+        <div class="date">
+            <h1 id="time"></h1> 
+            <p id="date"></p>
+        </div>
+    </header>
+    <img class="image" src="assets/workplace-results-professional-report-accounting-during 1.png" alt="">
+    <section class="box">
+        <p class="quote">“First, solve the problem. Then, write the code.” - John Johnson</p>
+    </section>
     <footer>
         <div id="line2"></div>
         <p>© Baltic Institute of Technology</p>
     </footer>
+    <script>
+        const d = new Date();
+        const days = ["Sekmadienis","Pirmadienis","Antradienis","Trečiadienis","Ketvirtadienis","Penktadienis","Šeštadienis"];
+        const months = ["Sausio", "Vasario", "Kovo", "Balandžio", "Gegužės", "Birželio", "Liepos", "Rugpjūčio", "Rugsėjo", "Spalio", "Lapkričio", "Gruodžio"];
+        let hour = d.getHours();
+        let minute = d.getMinutes();
+        let day = days[d.getDay()];
+        let month = months[d.getMonth()];
+        document.getElementById("time").innerHTML = hour + ":" + minute;
+        document.getElementById("date").innerHTML = day + ", " + month + " " + d.getDate() + ", " + d.getFullYear();
+    </script>
 </body>
 </html>

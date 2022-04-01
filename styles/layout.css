@@ -1,4 +1,5 @@
 @import '../global.css';
+@import 'media.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
 
 * {
@@ -6,14 +7,67 @@
     margin: 0;
     padding: 0;
 }
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+h1 {
+    font-size: 36px;
+}
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    background: linear-gradient(0deg, rgba(237, 236, 243, 0.4), rgba(237, 236, 243, 0.4));
+    margin: 20px 0 20px 0;
+    padding-left: 100px;
+}
+.box {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0 0 20px 100px;
+}
+.quote {
+    width: 750px;
+    height: 121px;
+    border: 2px solid #02577A;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 50px 0;
+    font-size: 16px;
+}
+.name {
+    width: 341px;
+    height: 80px;
+    margin: 75px 0 0 206px;
+}
+.date {
+    width: 470px;
+    height: 130px;
+    margin: 56px 0 0 190px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 22px 0 0 96px;
+}
+#time {
+    color: #02577A;
+}
+#date {
+    margin-top: 15px;
+    font-size: 18px;
+}
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+    justify-content: space-around;
     text-align: center;
     color: #02577A;
     font-size: 0.7rem;
-    padding: 1rem 0;
+    height: 30px;
+    padding-left: 100px;
   }
 .sidebar {
     position: fixed;
@@ -37,7 +91,7 @@ footer {
     width: 70%;
 }
 #line2 {
-        width: 30%;
+        width: 346px;
         margin: 0.5rem auto;
         border-bottom: 1px solid #02577a;
 }
@@ -123,4 +177,35 @@ a {
 }
 .active .text , #active .text {
     color: #02577a;
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 29px;
+    }
+    .name {
+        margin: 30px 0 0 141px;
+        width: 285px;
+    }
+    .date {
+        width: 400px;
+        margin: 20px 20px 0 125px;
+        padding: 22px 0 0 20px;
+    }
+    
+    .image {
+        object-fit: cover;
+        height: 280px;
+    }
+    .box {
+        margin: 0 20px 0 25px;
+    }
+    .quote {
+        padding: 40px;
+    }
+    /* #line2 {
+        width: 60%;
+    } */
+}
+@media screen and (min-width: 600px max-width: 900px){
+
 }

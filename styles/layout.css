@@ -185,6 +185,9 @@ a {
     h1 {
         font-size: 29px;
     }
+    header {
+        flex-direction: column-reverse;
+    }
     .name {
         margin: 30px 0 0 141px;
         width: 285px;

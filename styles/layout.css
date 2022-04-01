@@ -1,5 +1,5 @@
 @import '../global.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -13,10 +13,6 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
 }
-h1 {
-    font-size: 36px;
-}
-
 .image {
     width: 100%;
     height: auto;
@@ -44,6 +40,7 @@ h1 {
     width: 341px;
     height: 80px;
     margin: 75px 0 0 206px;
+    font-size: 36px;
 }
 .date {
     width: 470px;
@@ -55,6 +52,7 @@ h1 {
 }
 #time {
     color: #02577A;
+    font-size: 36px;
 }
 #date {
     margin-top: 15px;
@@ -157,7 +155,6 @@ a {
     display: none;
     color:  rgba(196, 196, 196, 1);
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Montserrat';
     font-size: 16px;
 }
 .list:hover .text , .list:active .text {

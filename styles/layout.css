@@ -1,5 +1,4 @@
 @import '../global.css';
-@import 'media.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
 
 * {
@@ -7,6 +6,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* CONTENT */
 header {
     display: flex;
     flex-direction: row;
@@ -15,6 +16,7 @@ header {
 h1 {
     font-size: 36px;
 }
+
 .image {
     width: 100%;
     height: auto;
@@ -58,6 +60,7 @@ h1 {
     margin-top: 15px;
     font-size: 18px;
 }
+/* FOOTER and SIDEBAR */
 footer {
     position: relative;
     bottom: 0;
@@ -129,7 +132,7 @@ a {
     border-radius: 25px 0px 0px 25px;
     width: 206px;
 }
-/* SVG */
+/* NAV - SVG */
 .svg {
     margin-left: 25px;
 }
@@ -149,7 +152,7 @@ a {
     filter: invert(22%) sepia(72%) saturate(1798%) hue-rotate(173deg) brightness(50%) contrast(98%);
 }
 
-/* TEXT */
+/* NAV - TEXT */
 .text {
     display: none;
     color:  rgba(196, 196, 196, 1);
@@ -202,9 +205,6 @@ a {
     .quote {
         padding: 40px;
     }
-    /* #line2 {
-        width: 60%;
-    } */
 }
 @media screen and (min-width: 600px max-width: 900px){
 

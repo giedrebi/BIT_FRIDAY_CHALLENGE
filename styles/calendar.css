@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.grid-container {
+    display: grid;
+}
+.grid {
+    width: 500px;
+    margin: 56px 0 0 150px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 20px 0 20px 40px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.grid-items {
+    display: grid;
+}
+.item-one {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.item-two {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.item-three {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.title {
+    display: grid;
+    grid-template-columns: 8;
+}
+.title > h1 {
+    grid-column: 1;
+}
+.title > .dots {
+    grid-column:8;
+    margin-top: 15px;
+}
+.grid > p {
+    color: #C4C4C4;
+    margin: 5px 0 20px 0;
+}
+.line3 {
+    width: 170px;
+    height: 18px;
+    border-radius: 25px;
+}
+.red {
+    background-color: #FC0000;
+}
+.yellow {
+    background-color: #FCE300;
+}
+.green {
+    background-color: #51FC00;
+}
+/* CALENDAR ALL MONTH */
+.calendar-month {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 500px;
+    margin: 56px 80px 0 50px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 30px 20px 0 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+.month {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+.arrow {
+    margin: 5px 20px 0 20px;
+    height: 10px;
+}
+.day-of-week,
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
+    text-align: center;
+    margin-top: 10px;
+}
+.day-of-week > p {
+    color: #C4C4C4;
+    width: 60px;
+}
+.date-grid > p {
+    width: 60px;
+    height: 45px;
+    font-weight: bold;
+}
+.grey-number {
+    color: #C4C4C4;
+}
+.today-number { 
+    background-color: #02577A;
+    border-radius: 50%;
+    width: 45px!important;
+    margin: -10px 0 10px 8px;
+    padding-top: 10px;
+    color: #FFFFFF!important;
+} 
+.column-one {
+    grid-column: 1;
+}
+.column-two {
+    grid-column: 2;
+}
+.column-three {
+    grid-column: 3;
+}
+.column-four {
+    grid-column: 4;
+}
+.column-five{
+    grid-column: 5;
+}
+.column-six {
+    grid-column: 6;
+}
+.column-seven {
+    grid-column: 7;
+}
+.line4 {
+width: 420px;
+margin: 20px 0 10px 0;
+border-bottom: 1px solid #C4C4C4;
+}
+/* ADD BUTTON */
+.add-button {
+    background-color: #02577A;
+    position: relative;
+    color: #FFFFFF;
+    font-size: 48px;
+    width: 60px;
+    height: 60px;
+    margin: 56px 0 56px 160px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.add-button:hover {
+    background: #EBEEF5;
+    color: #02577A;
+    border: 3px solid #02577A;
+    font-size: 44px;
+}
+@media screen and (max-width: 600px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .grid {
+        width: 90%;
+        margin: 20px 0 0 95px;
+        padding: 10px 0 10px 20px;
+    }
+    .calendar-month {
+        width: 90%;
+        margin: 56px 80px 0 95px;
+        font-size: 14px;
+    }
+    .month {
+        margin-bottom: 20px;
+    }
+    .day-of-week > p {
+        width: 35px;
+        column-gap: 15%;
+    }
+    .date-grid > p {
+        width: 35px;
+        height: 20px;
+    }
+    .today-number { 
+        width: 40px!important;
+        margin: -10px -8px 0px -3px;
+        padding-bottom: 25px;
+    } 
+    .line4 {
+        width: 95%;
+    }
+    .title > h1 {
+        font-size: 18px;
+    }
+    .title > .dots {
+        grid-column:8;
+        margin: 15px 15px 0 0;
+    }
+    .grid > p {
+        color: #C4C4C4;
+        margin: 5px 0 10px 0;
+        font-size: 14px;
+    }
+    .line3 {
+        width: 100px;
+        height: 10px;
+        border-radius: 25px;
+    }
+    .add-button {
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        margin: 30px 0 30px 380px;
+}

@@ -1,4 +1,5 @@
 @import '../global.css';
+@import 'calendar.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
@@ -69,11 +70,11 @@ footer {
     font-size: 0.7rem;
     height: 30px;
     padding-left: 100px;
-  }
+}
 .sidebar {
     position: fixed;
     width: 100px;
-    height: 100vh;
+    height: 100%;
     background: #F7F6FF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: 0.5s;
@@ -179,6 +180,15 @@ a {
     color: #02577a;
 }
 @media screen and (max-width: 600px) {
+    .sidebar {
+        width: 80px;
+    }
+    .logo > img {
+        width: 60px;
+    }
+    .svg {
+        margin-left: 10px;
+    }
     h1 {
         font-size: 29px;
     }
@@ -187,17 +197,18 @@ a {
     }
     .name {
         margin: 30px 0 0 141px;
-        width: 130px;
+        width: 300px;
+        font-size: 30px;
     }
     .date {
-        width: 130px;
+        width: 400px;
         margin: 20px 20px 0 125px;
         padding: 22px 0 0 20px;
     }
-    
     .image {
         object-fit: cover;
         height: 280px;
+        padding-left: 80px;
     }
     .box {
         margin: 0 20px 0 25px;
